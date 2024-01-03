@@ -779,9 +779,6 @@ a {
     font-size: 1rem;
     width: auto;
   }
-  .place-order h3 {
-    border: solid;
-  }
   .footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, auto));
