@@ -780,7 +780,7 @@ a {
     width: auto;
   }
   .place-order h3 {
-    border: solid;
+    border: none;
   }
   .footer {
     display: grid;
