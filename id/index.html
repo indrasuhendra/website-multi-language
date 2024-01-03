@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"/>
+        <link rel="stylesheet" href="../assets/css/styles.css" />
+        
+        <title>CodeBox</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+            <a href="#" class="nav__logo">
+                <i class="bx bx-code-alt"></i> CodeBox
+            </a>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line nav__toggle-menu"></i>
+                <i class="ri-close-line nav__toggle-close"></i>
+            </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li>
+                <a href="index.html" class="nav__link">Home</a>
+                </li>
+
+                <!--=============== DROPDOWN 1 ===============-->
+                <li class="dropdown__item">
+                    <div class="nav__link dropdown__button">
+                        Industri <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+                
+                    <div class="dropdown__container">
+                        <div class="dropdown__content">
+                            <div class="dropdown__group">
+                                <div class="dropdown__icon">
+                                    <i class="ri-flashlight-line"></i>
+                                </div>
+                
+                                <span class="dropdown__title">Kursus Yang Paling Banyak Dilihat</span>
+                
+                                <ul class="dropdown__list">
+                                    <li>
+                                        <a href="html-for-beginners.html" class="dropdown__link">HTML untuk pemula</a>
+                                    </li>
+                                    <li>
+                                        <a href="advanced-css.html" class="dropdown__link">CSS Lanjutan</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript-oop.html" class="dropdown__link">JavaScript OOP</a>
+                                    </li>
+                                </ul>
+                            </div>
+                
+                            <div class="dropdown__group">
+                                <div class="dropdown__icon">
+                                    <i class="ri-heart-3-line"></i>
+                                </div>
+                
+                                <span class="dropdown__title">Kursus Populer</span>
+                
+                                <ul class="dropdown__list">
+                                    <li>
+                                        <a href="#" class="dropdown__link">Pengembangan dengan Flutter</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown__link">Pengembangan web dengan React</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown__link">Ahli pengembangan backend</a>
+                                    </li>
+                                </ul>
+                            </div>
+                
+                            <div class="dropdown__group">
+                                <div class="dropdown__icon">
+                                    <i class="ri-book-mark-line"></i>
+                                </div>
+                
+                                <span class="dropdown__title">Karir</span>
+                
+                                <ul class="dropdown__list">
+                                    <li>
+                                        <a href="#" class="dropdown__link">Pengembangan web</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown__link">Pengembangan aplikasi</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown__link">Desain UI/UX</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown__link">Keamanan Informatika</a>
+                                    </li>
+                                </ul>
+                            </div>
+                
+                            <div class="dropdown__group">
+                                <div class="dropdown__icon">
+                                    <i class="ri-file-paper-2-line"></i>
+                                </div>
+                
+                                <span class="dropdown__title">Sertifikasi</span>
+                
+                                <ul class="dropdown__list">
+                                    <li>
+                                        <a href="#" class="dropdown__link">Sertifikat kursus</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown__link">Sertifikasi gratis</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!--=============== DROPDOWN 2 ===============-->
+                <li class="dropdown__item">
+                    <div class="nav__link dropdown__button">
+                        Produk <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+                
+                    <div class="dropdown__container">
+                        <div class="dropdown__content">
+                            <div class="dropdown__group">
+                                <div class="dropdown__icon">
+                                    <i class="ri-code-line"></i>
+                                </div>
+                
+                                <span class="dropdown__title">Template Situs Web</span>
+                
+                                <ul class="dropdown__list">
+                                    <li>
+                                        <a href="#" class="dropdown__link">Template Gratis</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown__link">Template Premium</a>
+                                    </li>
+                                </ul>
+                            </div>
+                
+                            <div class="dropdown__group">
+                                <div class="dropdown__icon">
+                                    <i class="ri-pen-nib-line"></i>
+                                </div>
+                
+                                <span class="dropdown__title">Desain</span>
+                
+                                <ul class="dropdown__list">
+                                    <li>
+                                        <a href="#" class="dropdown__link">Desain Situs Web</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown__link">Desain Aplikasi</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown__link">Desain Komponen</a>
+                                    </li>
+                                </ul>
+                            </div>
+                
+                            <div class="dropdown__group">
+                                <div class="dropdown__icon">
+                                    <i class="ri-apps-2-line"></i>
+                                </div>
+                
+                                <span class="dropdown__title">Lainnya</span>
+                
+                                <ul class="dropdown__list">
+                                    <li>
+                                        <a href="#" class="dropdown__link">Blog Terbaru</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown__link">Video Tutorial</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown__link">Webinar</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <a href="#" class="nav__link">Mitra</a>
+                </li>
+                
+                <!--=============== DROPDOWN 3 ===============-->
+                <li class="dropdown__item">
+                <div class="nav__link dropdown__button">
+                    Bantuan <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                </div>
+
+                <div class="dropdown__container">
+                    <div class="dropdown__content">
+                    <div class="dropdown__group">
+                        <div class="dropdown__icon">
+                        <i class="ri-community-line"></i>
+                        </div>
+
+                        <span class="dropdown__title">Tentang kami</span>
+
+                        <ul class="dropdown__list">
+                        <li>
+                            <a href="about.html" class="dropdown__link">Tentang Kami</a>
+                        </li>
+                        <li>
+                            <a href="support.html" class="dropdown__link">Bantuan</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="dropdown__link">Hubungi Kami</a>
+                        </li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown__group">
+                        <div class="dropdown__icon">
+                        <i class="ri-shield-line"></i>
+                        </div>
+
+                        <span class="dropdown__title">Keamanan dan kualitas</span>
+
+                        <ul class="dropdown__list">
+                        <li>
+                            <a href="#" class="dropdown__link">Pengaturan Cookie</a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown__link">Kebijakan Pribadi</a>
+                        </li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown__group">
+                        <div class="dropdown__icon">
+                        <i class="ri-global-line"></i>
+                        </div>
+
+                        <span class="dropdown__title">Pilih Bahasa</span>
+
+                        <ul class="dropdown__list">
+                        <li>
+                            <a href="../index.html" class="dropdown__link">Inggris</a>
+                        </li>
+                        <li>
+                            <a href="../id/index.html" class="dropdown__link">Indonesia</a>
+                        </li>
+                        <li>
+                            <a href="../ko/index.html" class="dropdown__link">Korea</a>
+                        </li>
+                        <li>
+                            <a href="../ch/index.html" class="dropdown__link">Cina</a>
+                        </li>
+                        <li>
+                            <a href="../jp/index.html" class="dropdown__link">Japan</a>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                </li>
+            </ul>
+        </nav>
+        </header>
+
+        <!-- Hero -->
+        <section class="hero" id="hero">
+        <main class="content">
+            <h1>Pemograman Web<span> CodeBox</span></h1>
+            <p>Belajar membangun sebuah website dengan pemrograman dasar dimulai dari HTML dan CSS.</p>
+            <a href="#" class="cta">Gabung Sekarang!</a>
+        </main>
+        </section>
+        <!-- End Hero -->
+        
+        <!-- About Us -->
+        <section id="about" class="about">
+            <h2 id="about-title-id">About<span> Us</span></h2>
+            <div class="row">
+                <div class="about-img">
+                <img src="../assets/img/111.jpg" alt="About Us" />
+                </div>
+                <div class="content">
+                <h3>Kami Adalah Salah Satu Kursus Pengembangan Web Professional</h3>
+                <p>Kami Memberikan Pemahaman Anda dalam Membuat Web, Mata Pelajaran Yang Diusulkan Termasuk Pelajaran Bahasa Pemrograman Dasar mulai dari Kelas Pemula</p>
+                <ul class="list-style-one">
+                    <li>
+                    <i class="ri-checkbox-circle-line" style="color: blue"></i>
+                    Pengenalan topik HTML dan CSS.
+                    </li>
+                    <li>
+                    <i class="ri-checkbox-circle-line" style="color: blue"></i>
+                    Mengerti dan membuat kondisi menggunakan tag HTML.
+                    </li>
+                    <li>
+                    <i class="ri-checkbox-circle-line" style="color: blue"></i>
+                    Mengerti penggunaan posisi tata letak dengan CSS. 
+                    </li>
+                    <li>
+                    <i class="ri-checkbox-circle-line" style="color: blue"></i>
+                    Menggabungkan HTML dan CSS untuk membangun sebuah web.
+                    </li>
+                    <li>
+                    <i
+                    class="ri-checkbox-circle-line" style="width: 10%; color: blue"
+                    ></i>
+                    Mengerti JavaScript dalam membuat animasi pada web.
+                    </li>
+                    </li>
+                    <li>
+                    <i class="ri-checkbox-circle-line" style="color: blue"></i>
+                    Mengerti React Js dan Menggunakan pada Halaman Web.  
+                    </li>
+                </ul>
+                <a href="about.html" class="main-btn">Informasi Selengkapnya</a>
+                </div>
+            </div>
+        </section>
+        <!-- End About Us -->
+
+        <!-- Menu Section start -->
+        <section id="menu" class="menu">
+            <h2>Menu<span> Kami</span></h2>
+            <p>In the context of Material Activities, we provide a variety of materials needed to build a website. We offer various levels, starting from beginner to advanced levels.
+            <div class="row">
+                
+                <div class="menu-card">
+                <img src="../assets/img/menu1.jpg" alt="HTML" class="menu-card-img">
+                <h3 class="menu-card-title">HTML</h3>
+                <p>Hypertext Markup Language atau HTML adalah bahasa markup standar yang digunakan untuk membuat halaman website dan aplikasi web</p>
+                <br><a href="">Read More</a>
+                </div>
+                
+                <div class="menu-card">
+                <img src="../assets/img/menu2.jpg" alt="CSS" class="menu-card-img">
+                <h3 class="menu-card-title">CSS</h3>
+                <p>CSS adalah bahasa Cascading Style Sheet dan biasanya digunakan untuk mengatur tampilan elemen yang tertulis dalam bahasa markup, seperti HTML.</p>
+                <br><a href="">Read More</a>
+                </div>
+                
+                <div class="menu-card">
+                <img src="../assets/img/menu3.jpg" alt="JavaScript" class="menu-card-img">
+                <h3 class="menu-card-title">JavaScript</h3>
+                <p>JavaScript adalah skrip pemrograman yang digunakan oleh web developer untuk menciptakan interaksi yang lebih dinamis seperti halaman web.</p>
+                <br><a href="">Read More</a>
+                </div>
+    
+                <div class="menu-card">
+                <img src="../assets/img/menu4.jpg" alt="NexJs" class="menu-card-img">
+                <h3 class="menu-card-title">React Js</h3>
+                <p>ReactJS atau React adalah library JavaScript yang sangat populer buatan Facebook yang digunakan dalam proses pengembangan aplikasi mobile dan web</p>
+                <br><a href="">Read More</a>
+                </div>
+    
+            </div>
+        </section>
+        <!-- Menu Section end -->
+        
+        <!-- Product Section start -->
+        <section id="product" class="products">
+            <h2>Product<span> Us</span></h2>
+            <p>We have best product fo you, when you join courses we give you knowlage to programming language HTML, CSS and JavaScript.
+            </p>
+            
+            <div class="row">
+                <div class="products-card">
+                <img src="../assets/img/web11.PNG" alt="Rolex" class="products-card-img">
+                <h3>
+                    <a href="" class="products-card-title">Rolex</a>
+                </h3> 
+                    <p class="products-card-price">IDR 1.500K</p>
+                </div>
+                <div class="products-card">
+                <img src="../assets/img/web11.PNG" alt="Rolex" class="products-card-img">
+                <h3>
+                    <a href="" class="products-card-title">Rolex</a>
+                </h3> 
+                    <p class="products-card-price">IDR 1.500K</p>
+                </div>
+                <div class="products-card">
+                <img src="../assets/img/web11.PNG" alt="Rolex" class="products-card-img">
+                <h3>
+                    <a href="" class="products-card-title">Rolex</a>
+                </h3> 
+                    <p class="products-card-price">UDR 1.500K</p>
+                </div>
+                <div class="products-card">
+                <img src="../assets/img/web11.PNG" alt="Rolex" class="products-card-img">
+                <h3>
+                    <a href="" class="products-card-title">Rolex</a>
+                </h3> 
+                    <p class="products-card-price">USD 1500K</p>
+                </div>
+                <div class="products-card">
+                <img src="../assets/img/web11.PNG" alt="Rolex" class="products-card-img">
+                <h3>
+                    <a href="" class="products-card-title">Rolex</a>
+                </h3> 
+                    <p class="products-card-price">UDR 1.500K</p>
+                </div>
+                <div class="products-card">
+                <img src="../assets/img/web11.PNG" alt="Rolex" class="products-card-img">
+                <h3>
+                    <a href="" class="products-card-title">Rolex</a>
+                </h3> 
+                    <p class="products-card-price">UDR 1.500K</p>
+                </div>
+        </section>
+        <!-- Product Section end -->
+
+        <!-- Costumer Service -->    
+        <section id="costumer" class="costumer">
+            <div class="container">
+                <h2>Services<span> Centers</span></h2>
+                <p>
+                We have multiple branches throughout Indonesia. Everyone has the opportunity to become a skilled web developer.
+                </p>
+                </p>
+                <div class="row">
+                <div class="place-order">
+                    <h3>Place and Address Us</h3>
+                    <h4>Asia Pacific<span> PACS, SI, EAT: </span></h4>
+                    <ul class="contacts">
+                        <li>China: <a href="mailto:China-orders@hidglobal.com">China-orders@hidglobal.com</a></li>
+                        <li>India: <a href="mailto:India-orders@hidglobal.com">India-orders@hidglobal.com</a></li>
+                        <li>Rest of APAC: <a href="mailto:APAC-orders@hidglobal.com">APAC-orders@hidglobal.com</a></li>
+                        <br><li>IAMS: <a href="mailto:ordersemea@hidglobal.com">ordersemea@hidglobal.com</a></li>
+                    </ul>
+                    
+                    <h4>Europe, Middle East & Africa <span> PACS, SI, EAT: </span></h4>
+                    <ul class="contacts">
+                        <li>China: <a href="mailto:China-orders@hidglobal.com">China-orders@hidglobal.com</a></li>
+                        <li>India: <a href="mailto:India-orders@hidglobal.com">India-orders@hidglobal.com</a></li>
+                        <li>Rest of APAC: <a href="mailto:APAC-orders@hidglobal.com">APAC-orders@hidglobal.com</a></li>
+                        <br><li>IAMS: <a href="mailto:ordersemea@hidglobal.com">ordersemea@hidglobal.com</a></li>
+                        </ul>
+    
+                        <h4>Asia Pacific<span> PACS, SI, EAT: </span></h4>
+                        <ul class="contacts">
+                            <li>China: <a href="mailto:China-orders@hidglobal.com">China-orders@hidglobal.com</a></li>
+                            <li>India: <a href="mailto:India-orders@hidglobal.com">India-orders@hidglobal.com</a></li>
+                            <li>Rest of APAC: <a href="mailto:APAC-orders@hidglobal.com">APAC-orders@hidglobal.com</a></li>
+                            <br><li>IAMS: <a href="mailto:ordersemea@hidglobal.com">ordersemea@hidglobal.com</a></li>
+                        </ul>
+                </div>
+                
+                <div class="costumer-services">
+                    <h3>How To Register</h3>
+                    <p>
+                    <b><a href="">Create an Account</a></b>
+                    <br>"After filling out the registration form"</br>
+                    </p>
+                    <p>
+                    <b><a href="">Log in with your account</a></b>
+                    <br>Get all of your order-related questions answered such as:
+                    </p>
+                    <ul>
+                        <li><i class='bx bx-check'></i>Choosen Study Packet.</li>
+                        <li><i class='bx bx-check'></i>Confirmation Sechedule.</li>
+                        <li><i class='bx bx-check'></i>Process Payment.</li>
+                        <li><i class='bx bx-check'></i>Process Done.</li>
+                        <li><i class='bx bx-check'></i>Courses Starting</li>
+                    </ul>
+                    <p>
+                    Please call admin if you have problem with process. we can still 24 hour for you need.</p>
+                </div>
+        </section>
+        <!-- Product Section end -->
+
+        <!-- Footer -->
+        <section class="footer">
+            <div class="footer-content">
+            <img src="../assets/img/logo1.png" width="200" height="auto" />
+            <p>
+                Hanya di sini setiap orang bisa mempunyai kesempatan untuk menjadi pandai coding.
+            </p>
+    
+            <div class="icons">
+                <a href=""><i class="bx bxl-facebook-square"></i></a>
+                <a href=""><i class="bx bxl-twitter"></i></a>
+                <a href=""><i class="bx bxl-instagram-alt"></i></a>
+                <a href=""><i class='bx bxl-linkedin-square'></i></a>
+                <a href=""><i class='bx bxl-discord-alt'></i></i></a>
+            </div>
+            </div>
+    
+            <div class="footer-content">
+            <h4>Quick Links</h4>
+            <li><a href="">Home</a></li>
+            <li><a href="">Industri</a></li>
+            <li><a href="">Produk</a></li>
+            <li><a href="">Patner</a></li>
+            <li><a href="">Bantuan</a></li>
+            </div>
+    
+            <div class="footer-content">
+                <h4>Industry</h4>
+                <li><a href="">Kursus Paling Diminati </a></li>
+                <li><a href="">Kursus Populer</a></li>
+                <li><a href="">Karir</a></li>
+                <li><a href="">Sertifikasi</a></li>
+            </div>
+    
+            <div class="footer-content">
+                <h4>Product</h4>
+                <li><a href="">Template Situs Web</a></li>
+                <li><a href="">Desain</a></li>
+                <li><a href="">Blog Terbaru</a></li>
+                <li><a href="">Vidio Tutorial</a></li>
+                <li><a href="">Webinar</a></li>
+            </div>
+        </section>
+        <!-- End Footer -->
+        <!--=============== MAIN JS ===============-->
+        <script src="../assets/js/main.js"></script>
+        <!--============== Translet =============== -->
+    </body>
+</html>

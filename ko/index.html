@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"/>
+        <link rel="stylesheet" href="../assets/css/styles.css" />
+        
+        <title>CodeBox</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a href="#" class="nav__logo">
+                        <i class="bx bx-code-alt"></i> CodeBox
+                    </a>
+        
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__toggle-menu"></i>
+                        <i class="ri-close-line nav__toggle-close"></i>
+                    </div>
+                </div>
+        
+                <!--=============== NAV MENU ===============-->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li>
+                            <a href="index.html" class="nav__link">홈</a>
+                        </li>
+        
+                        <!--=============== DROPDOWN 1 ===============-->
+                        <li class="dropdown__item">
+                            <div class="nav__link dropdown__button">
+                                산업 <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+                        
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-flashlight-line"></i>
+                                        </div>
+                        
+                                        <span class="dropdown__title">가장 많이 본 강의</span>
+                        
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="html-for-beginners.html" class="dropdown__link">초보자를 위한 HTML</a>
+                                            </li>
+                                            <li>
+                                                <a href="advanced-css.html" class="dropdown__link">고급 CSS</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript-oop.html" class="dropdown__link">자바스크립트 OOP</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                        
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-heart-3-line"></i>
+                                        </div>
+                        
+                                        <span class="dropdown__title">인기 강의</span>
+                        
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">플러터 개발</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">리액트 웹 개발</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">백엔드 개발자</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                        
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-book-mark-line"></i>
+                                        </div>
+                        
+                                        <span class="dropdown__title">직업</span>
+                        
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">웹 개발</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">앱 개발</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">UI/UX 디자인</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">정보 보안</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                        
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-file-paper-2-line"></i>
+                                        </div>
+                        
+                                        <span class="dropdown__title">자격증</span>
+                        
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">강의 인증서</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">무료 자격증</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!--=============== DROPDOWN 2 ===============-->
+                        <li class="dropdown__item">
+                            <div class="nav__link dropdown__button">
+                                제품 <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+                        
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-code-line"></i>
+                                        </div>
+                        
+                                        <span class="dropdown__title">웹 사이트 템플릿</span>
+                        
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">무료 템플릿</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">프리미엄 템플릿</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                        
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-pen-nib-line"></i>
+                                        </div>
+                        
+                                        <span class="dropdown__title">디자인</span>
+                        
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">웹 사이트 디자인</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">앱 디자인</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">컴포넌트 디자인</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                        
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-apps-2-line"></i>
+                                        </div>
+                        
+                                        <span class="dropdown__title">기타</span>
+                        
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">최신 블로그</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">비디오 튜토리얼</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">웨비나</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <a href="#" class="nav__link">파트너</a>
+                        </li>
+                        
+                        <!--=============== DROPDOWN 3 ===============-->
+                        <li class="dropdown__item">
+                            <div class="nav__link dropdown__button">
+                                도움말 <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+        
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-community-line"></i>
+                                        </div>
+        
+                                        <span class="dropdown__title">회사 정보</span>
+        
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="about.html" class="dropdown__link">회사 정보</a>
+                                            </li>
+                                            <li>
+                                                <a href="support.html" class="dropdown__link">지원</a>
+                                            </li>
+                                            <li>
+                                                <a href="contact.html" class="dropdown__link">연락처</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+        
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-shield-line"></i>
+                                        </div>
+        
+                                        <span class="dropdown__title">보안 및 품질</span>
+        
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">쿠키 설정</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">개인정보 정책</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+        
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-global-line"></i>
+                                        </div>
+        
+                                        <span class="dropdown__title">언어 선택</span>
+        
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="../index.html" class="dropdown__link">영어</a>
+                                            </li>
+                                            <li>
+                                                <a href="../id/index.html" class="dropdown__link">인도네시아어</a>
+                                            </li>
+                                            <li>
+                                                <a href="../ko/index.html" class="dropdown__link">한국어</a>
+                                            </li>
+                                            <li>
+                                                <a href="../ch/index.html" class="dropdown__link">중국어</a>
+                                            </li>
+                                            <li>
+                                                <a href="../jp/index.html" class="dropdown__link">일본어</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+
+        <!-- Hero -->
+        <section class="hero" id="hero">
+            <main class="content">
+                <h1>웹 프로그래밍<span> CodeBox</span></h1>
+                <p>웹 프로그래밍 배우기<span> CodeBox</span></p>
+                <a href="#" class="cta">지금 가입하세요!</a>
+            </main>
+        </section>
+        <!-- End Hero -->
+        
+        <!-- About Us -->
+        <section id="about" class="about">
+            <h2 id="about-title-id">우리에 <span>대하여</span></h2>
+            <div class="row">
+                <div class="about-img">
+                    <img src="../assets/img/111.jpg" alt="우리에 대하여" />
+                </div>
+                <div class="content">
+                    <h3>우리는 프로페셔널 웹 개발 과정 중 하나입니다</h3>
+                    <p>웹 제작에 대한 이해를 제공하며, 초보자를 위한 기초 프로그래밍 언어 수업을 포함합니다</p>
+                    <ul class="list-style-one">
+                        <li>
+                            <i class="ri-checkbox-circle-line" style="color: blue"></i>
+                            HTML 및 CSS 주제 소개.
+                        </li>
+                        <li>
+                            <i class="ri-checkbox-circle-line" style="color: blue"></i>
+                            HTML 태그를 사용하여 조건을 이해하고 만들기.
+                        </li>
+                        <li>
+                            <i class="ri-checkbox-circle-line" style="color: blue"></i>
+                            CSS로 레이아웃 위치 이해하기.
+                        </li>
+                        <li>
+                            <i class="ri-checkbox-circle-line" style="color: blue"></i>
+                            웹 구축을 위한 HTML 및 CSS 통합.
+                        </li>
+                        <li>
+                            <i class="ri-checkbox-circle-line" style="width: 10%; color: blue"></i>
+                            웹에서 애니메이션을 만들기 위한 JavaScript 이해.
+                        </li>
+                        <li>
+                            <i class="ri-checkbox-circle-line" style="color: blue"></i>
+                            React Js의 이해 및 웹 페이지에 사용하기.
+                        </li>
+                    </ul>
+                    <a href="about.html" class="main-btn">더 많은 정보</a>
+                </div>
+            </div>
+        </section>
+        <!-- End About Us -->
+
+        <!-- Menu Section start -->
+        <section id="menu" class="menu">
+            <h2>우리의<span> 메뉴</span></h2>
+            <p>웹사이트를 만드는 데 필요한 다양한 자료를 제공합니다. 초보부터 고급 수준까지 다양한 레벨의 자료를 제공합니다.</p>
+            <div class="row">
+                
+                <div class="menu-card">
+                    <img src="../assets/img/menu1.jpg" alt="HTML" class="menu-card-img">
+                    <h3 class="menu-card-title">HTML</h3>
+                    <p>HTML(Hypertext Markup Language)은 웹 페이지와 웹 애플리케이션을 만들기 위해 사용되는 표준 마크업 언어입니다.</p>
+                    <br><a href="">더 읽기</a>
+                </div>
+                
+                <div class="menu-card">
+                    <img src="../assets/img/menu2.jpg" alt="CSS" class="menu-card-img">
+                    <h3 class="menu-card-title">CSS</h3>
+                    <p>CSS(Cascading Style Sheet)는 HTML과 같은 마크업 언어로 작성된 요소의 디자인을 꾸미는 데 사용됩니다.</p>
+                    <br><a href="">더 읽기</a>
+                </div>
+                
+                <div class="menu-card">
+                    <img src="../assets/img/menu3.jpg" alt="JavaScript" class="menu-card-img">
+                    <h3 class="menu-card-title">JavaScript</h3>
+                    <p>JavaScript는 웹 개발자가 웹 페이지에서 더 동적인 상호 작용을 만들기 위해 사용하는 스크립트 언어입니다.</p>
+                    <br><a href="">더 읽기</a>
+                </div>
+        
+                <div class="menu-card">
+                    <img src="../assets/img/menu4.jpg" alt="NexJs" class="menu-card-img">
+                    <h3 class="menu-card-title">React Js</h3>
+                    <p>ReactJS 또는 React는 페이스북에서 개발된 매우 인기 있는 JavaScript 라이브러리로, 모바일 및 웹 애플리케이션 개발에 사용됩니다.</p>
+                    <br><a href="">더 읽기</a>
+                </div>
+        
+            </div>
+        </section>
+        <!-- Menu Section end -->
+        
+        <!-- Product Section start -->
+        <section id="product" class="products">
+            <h2>제품<span> 우리</span></h2>
+            <p>저희는 최고의 제품을 보유하고 있습니다. 수업에 참여하시면 HTML, CSS 및 JavaScript와 같은 프로그래밍 언어에 대한 지식을 제공해 드립니다.
+            </p>
+            
+            <div class="row">
+                <div class="products-card">
+                    <img src="../assets/img/web11.PNG" alt="Rolex" class="products-card-img">
+                    <h3>
+                        <a href="" class="products-card-title">롤렉스</a>
+                    </h3> 
+                    <p class="products-card-price">KRW 1.500</p>
+                </div>
+                <div class="products-card">
+                    <img src="../assets/img/web11.PNG" alt="Rolex" class="products-card-img">
+                    <h3>
+                        <a href="" class="products-card-title">롤렉스</a>
+                    </h3> 
+                    <p class="products-card-price">KRW 1.500</p>
+                </div>
+                <div class="products-card">
+                    <img src="../assets/img/web11.PNG" alt="Rolex" class="products-card-img">
+                    <h3>
+                        <a href="" class="products-card-title">롤렉스</a>
+                    </h3> 
+                    <p class="products-card-price">KRW 1.500</p>
+                </div>
+                <div class="products-card">
+                    <img src="../assets/img/web11.PNG" alt="Rolex" class="products-card-img">
+                    <h3>
+                        <a href="" class="products-card-title">롤렉스</a>
+                    </h3> 
+                    <p class="products-card-price">KRW 1500</p>
+                </div>
+                <div class="products-card">
+                    <img src="../assets/img/web11.PNG" alt="Rolex" class="products-card-img">
+                    <h3>
+                        <a href="" class="products-card-title">롤렉스</a>
+                    </h3> 
+                    <p class="products-card-price">KRW 1.500</p>
+                </div>
+                <div class="products-card">
+                    <img src="../assets/img/web11.PNG" alt="Rolex" class="products-card-img">
+                    <h3>
+                        <a href="" class="products-card-title">롤렉스</a>
+                    </h3> 
+                    <p class="products-card-price">KRW 1.500</p>
+                </div>
+            </div>
+        </section>
+        <!-- Product Section end -->
+
+        <!-- Costumer Service -->    
+        <section id="costumer" class="costumer">
+            <div class="container">
+                <h2>서비스<span> 센터</span></h2>
+                <p>
+                우리는 인도네시아 전역에 여러 지점을 두고 있습니다. 누구나 숙련된 웹 개발자가 될 수 있는 기회를 가지고 있습니다.
+                </p>
+                </p>
+                <div class="row">
+                    <div class="place-order">
+                        <h3>우리에게 주소를 남겨주세요</h3>
+                        <h4>아시아 태평양<span> PACS, SI, EAT: </span></h4>
+                        <ul class="contacts">
+                            <li>중국: <a href="mailto:China-orders@hidglobal.com">China-orders@hidglobal.com</a></li>
+                            <li>인도: <a href="mailto:India-orders@hidglobal.com">India-orders@hidglobal.com</a></li>
+                            <li>APAC의 나머지: <a href="mailto:APAC-orders@hidglobal.com">APAC-orders@hidglobal.com</a></li>
+                            <br><li>IAMS: <a href="mailto:ordersemea@hidglobal.com">ordersemea@hidglobal.com</a></li>
+                        </ul>
+                        
+                        <h4>유럽, 중동 및 아프리카 <span> PACS, SI, EAT: </span></h4>
+                        <ul class="contacts">
+                            <li>중국: <a href="mailto:China-orders@hidglobal.com">China-orders@hidglobal.com</a></li>
+                            <li>인도: <a href="mailto:India-orders@hidglobal.com">India-orders@hidglobal.com</a></li>
+                            <li>APAC의 나머지: <a href="mailto:APAC-orders@hidglobal.com">APAC-orders@hidglobal.com</a></li>
+                            <br><li>IAMS: <a href="mailto:ordersemea@hidglobal.com">ordersemea@hidglobal.com</a></li>
+                        </ul>
+        
+                        <h4>아시아 태평양<span> PACS, SI, EAT: </span></h4>
+                        <ul class="contacts">
+                            <li>중국: <a href="mailto:China-orders@hidglobal.com">China-orders@hidglobal.com</a></li>
+                            <li>인도: <a href="mailto:India-orders@hidglobal.com">India-orders@hidglobal.com</a></li>
+                            <li>APAC의 나머지: <a href="mailto:APAC-orders@hidglobal.com">APAC-orders@hidglobal.com</a></li>
+                            <br><li>IAMS: <a href="mailto:ordersemea@hidglobal.com">ordersemea@hidglobal.com</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="costumer-services">
+                        <h3>등록하는 방법</h3>
+                        <p>
+                        <b><a href="">계정 생성하기</a></b>
+                        <br>등록 양식을 작성한 후</br>
+                        </p>
+                        <p>
+                        <b><a href="">계정으로 로그인하기</a></b>
+                        <br>주문과 관련된 모든 질문에 대한 답변을 받으세요:
+                        </p>
+                        <ul>
+                            <li><i class='bx bx-check'></i>선택한 스터디 패킷.</li>
+                            <li><i class='bx bx-check'></i>일정 확인.</li>
+                            <li><i class='bx bx-check'></i>결제 진행.</li>
+                            <li><i class='bx bx-check'></i>진행 완료.</li>
+                            <li><i class='bx bx-check'></i>코스 시작</li>
+                        </ul>
+                        <p>
+                        문제가 발생하면 관리자에게 전화하세요. 우리는 필요 시 24시간 이용 가능합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Product Section end -->
+
+        <!-- Footer -->
+        <section class="footer">
+            <div class="footer-content">
+                <img src="../assets/img/logo1.png" width="200" height="auto" />
+                <p>
+                    只有这里，每个人都有机会学习编码技能。
+                </p>
+            
+                <div class="icons">
+                    <a href=""><i class="bx bxl-facebook-square"></i></a>
+                    <a href=""><i class="bx bxl-twitter"></i></a>
+                    <a href=""><i class="bx bxl-instagram-alt"></i></a>
+                    <a href=""><i class='bx bxl-linkedin-square'></i></a>
+                    <a href=""><i class='bx bxl-discord-alt'></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-content">
+                <h4>快速链接</h4>
+                <li><a href="">主页</a></li>
+                <li><a href="">行业</a></li>
+                <li><a href="">产品</a></li>
+                <li><a href="">合作伙伴</a></li>
+                <li><a href="">帮助</a></li>
+            </div>
+            
+            <div class="footer-content">
+                <h4>行业</h4>
+                <li><a href="">热门课程</a></li>
+                <li><a href="">流行课程</a></li>
+                <li><a href="">职业发展</a></li>
+                <li><a href="">认证</a></li>
+            </div>
+            
+            <div class="footer-content">
+                <h4>产品</h4>
+                <li><a href="">网站模板</a></li>
+                <li><a href="">设计</a></li>
+                <li><a href="">最新博客</a></li>
+                <li><a href="">视频教程</a></li>
+                <li><a href="">网络研讨会</a></li>
+            </div>
+        </section> 
+        <!-- End Footer -->
+        <!--=============== MAIN JS ===============-->
+        <script src="../assets/js/main.js"></script>
+        <!--============== Translet =============== -->
+    </body>
+</html>
